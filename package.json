@@ -1,6 +1,6 @@
 {
     "name": "postcodenl-vue-component",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
     "main": "./dist/address-lookup.umd.js",
     "module": "./dist/address-lookup.es.js",
