@@ -1,10 +1,11 @@
 {
-    "name": "postcodenl-address-lookup",
-    "version": "1.1.8",
+    "name": "postcodenl-vue-component",
+    "version": "1.0.1",
     "type": "module",
     "main": "./dist/address-lookup.umd.js",
     "module": "./dist/address-lookup.es.js",
     "types": "./dist/types/index.d.ts",
+    "homepage": "https://github.com/jprinsq/postcodenl-vue-component",
     "exports": {
         ".": {
             "import": "./dist/address-lookup.es.js",
