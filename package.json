@@ -1,0 +1,41 @@
+{
+    "name": "postcodenl-address-lookup",
+    "version": "1.1.8",
+    "type": "module",
+    "main": "./dist/address-lookup.umd.js",
+    "module": "./dist/address-lookup.es.js",
+    "types": "./dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/address-lookup.es.js",
+            "require": "./dist/address-lookup.umd.js",
+            "types": "./dist/types/index.d.ts"
+        },
+        "./style.css": "./dist/address-lookup.css"
+    },
+    "files": [
+        "dist",
+        "src/assets",
+        "src/types",
+        "src/components",
+        "src/styles"
+    ],
+    "scripts": {
+        "build": "vite build && vue-tsc --emitDeclarationOnly",
+        "dev": "vite",
+        "types": "vue-tsc --emitDeclarationOnly"
+    },
+    "dependencies": {
+        "@vueuse/core": "^11.1.0",
+        "vue": "^3.5.12"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.1.4",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.14",
+        "typescript": "~5.6.2",
+        "vue-tsc": "^2.1.6",
+        "@types/bun": "latest"
+    }
+}

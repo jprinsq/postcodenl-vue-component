@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Component specific styles */
+.address-lookup-container {
+    @apply relative flex flex-col w-fit;
+}
+
+.country-selector-button {
+    @apply absolute left-6 h-6 w-6 flex items-center hover:scale-110 transition-transform duration-200;
+}
+
+.country-flag {
+    @apply w-full h-full object-contain;
+}
+
+.address-input {
+    @apply block px-4 outline-none md:w-[34rem] w-fit h-10 pl-14 text-gray-900 border border-gray-300 rounded sm:bg-gray-50 text-sm sm:text-base transition-all duration-200;
+}
+
+/* Modal styles */
+.country-modal {
+    @apply fixed inset-0 bg-black/50 flex items-center justify-center p-4;
+}
+
+.modal-content {
+    @apply bg-white rounded p-6 w-full max-w-md transform transition-all;
+}
+
+.modal-title {
+    @apply text-xl font-semibold mb-4;
+}
+
+.countries-grid {
+    @apply grid grid-cols-2 sm:grid-cols-3 gap-4 max-h-[60vh] overflow-y-auto;
+}
+
+.country-button {
+    @apply flex flex-col items-center p-3 rounded hover:bg-gray-100 transition-colors duration-200 outline-none;
+}
+
+.country-button-flag {
+    @apply w-8 h-8 object-contain mb-2;
+}
+
+.country-button-name {
+    @apply text-sm text-center;
+}
+
+/* Modal transition classes */
+.modal-enter-from {
+    @apply opacity-0 scale-90;
+}
+
+.modal-enter-to {
+    @apply opacity-100 scale-100;
+}
+
+.modal-leave-from {
+    @apply opacity-100 scale-100;
+}
+
+.modal-leave-to {
+    @apply opacity-0 scale-90;
+}
+
+/* Autocomplete styles */
+.postcodenl-autocomplete-menu {
+    @apply absolute z-50 w-fit mt-1 bg-white rounded-lg border border-gray-200 overflow-hidden;
+}
+
+.postcodenl-autocomplete-menu-items {
+    @apply max-h-[300px] overflow-y-auto;
+}
+
+.postcodenl-autocomplete-item {
+    @apply px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-gray-700;
+}
+
+.postcodenl-autocomplete-item-focus {
+    @apply bg-gray-50;
+}
+
+.postcodenl-autocomplete-item mark {
+    @apply bg-transparent font-semibold text-blue-600;
+}
+
+.postcodenl-autocomplete-item-description {
+    @apply text-sm text-gray-500;
+}
