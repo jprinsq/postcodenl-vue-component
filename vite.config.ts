@@ -38,9 +38,4 @@ export default defineConfig({
     optimizeDeps: {
         include: ["./src/assets/AutocompleteAddress.min.cjs"],
     },
-    css: {
-        postcss: {
-            plugins: [require("tailwindcss"), require("autoprefixer")],
-        },
-    },
 });
