@@ -5,7 +5,7 @@ A Vue 3 component for address lookup and validation using PostcodeEU API.
 ## Installation
 
 ```bash
-npm install postcodenl-address-lookup@latest
+npm install postcodenl-vue-component@latest
 ```
 
 ## Usage
@@ -14,22 +14,22 @@ You can import the component in two ways:
 
 ```typescript
 // Named import
-import { AddressLookup } from "postcodenl-address-lookup";
+import { AddressLookup } from "postcodenl-vue-component";
 
 // OR default import
-import AddressLookup from "postcodenl-address-lookup";
+import AddressLookup from "postcodenl-vue-component";
 
 // Don't forget to import the styles
-import "postcodenl-address-lookup/style.css";
+import "postcodenl-vue-component/style.css";
 ```
 
 Full example:
 
 ```vue
 <script setup lang="ts">
-import { AddressLookup } from "postcodenl-address-lookup";
-import type { AddressDetails } from "postcodenl-address-lookup";
-import "postcodenl-address-lookup/style.css";
+import { AddressLookup } from "postcodenl-vue-component";
+import type { AddressDetails } from "postcodenl-vue-component";
+import "postcodenl-vue-component/style.css";
 
 const handleAddressSelected = (address: AddressDetails) => {
     console.log(address);
@@ -94,7 +94,7 @@ const handleAddressSelected = (address: AddressDetails) => {
 The package exports the following TypeScript types:
 
 ```typescript
-import type { AddressDetails, AutocompleteMatch, AutocompleteResponse, AddressDetailsResponse, Country } from "postcodenl-address-lookup";
+import type { AddressDetails, AutocompleteMatch, AutocompleteResponse, AddressDetailsResponse, Country } from "postcodenl-vue-component";
 ```
 
 ### AddressDetails
